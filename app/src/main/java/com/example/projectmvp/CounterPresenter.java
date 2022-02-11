@@ -24,7 +24,7 @@ public class CounterPresenter implements CounterContracts.Presenter {
     @Override
     public void changeColor() {
         if (counterModel.getCount() == 10 ){
-            counterView.updateColor(counterModel.getgColor());
+            counterView.updateColor(counterModel.getColor());
         }
     }
 
