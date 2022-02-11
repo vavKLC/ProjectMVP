@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity implements CounterContracts.
 
     @Override
     public void updateColor(int color) {
-        binding.numberTv.setTextColor(presenter.counterModel.getgColor());
+        binding.numberTv.setTextColor(presenter.counterModel.getColor());
     }
 
 
