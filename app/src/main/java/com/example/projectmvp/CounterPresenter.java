@@ -1,9 +1,9 @@
 package com.example.projectmvp;
 
+
 public class CounterPresenter implements CounterContracts.Presenter {
     CounterModel counterModel;
     CounterContracts.CounterView counterView;
-    int count = 0;
 
     public CounterPresenter() {
         counterModel = new CounterModel();
@@ -20,6 +20,14 @@ public class CounterPresenter implements CounterContracts.Presenter {
         counterModel.decrement();
         counterView.updateCounter(counterModel.getCount());
     }
+
+    @Override
+    public void changeColor() {
+        if (counterModel.getCount() == 10 ){
+            counterView.updateColor(counterModel.getgColor());
+        }
+    }
+
 
     @Override
     public void attachView(CounterContracts.CounterView counterView) {
