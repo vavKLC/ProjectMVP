@@ -15,8 +15,8 @@ public class CounterModel {
     }
 
 
-    public int getgColor() {
-        return gColor;
+    public int getColor() {
+        return Color;
     }
 
     public int getCount() {
